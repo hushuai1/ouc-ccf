@@ -12,7 +12,7 @@ const int N = 30;
 
 int n;
 bool o1[N], o2[N];//o1寸不带参数的，02寸带参数的
-string ans[N];
+string ans[N];  //注意这里是一个二维的数组，ans[i]存放的是一个字符串
 
 int main()
 {
@@ -41,7 +41,7 @@ int main()
             if (ops[i][0] != '-' || ops[i][1] < 'a' || ops[i].size() != 2) break;//判断是否合法
             int k = ops[i][1] - 'a';  //记录是哪个字母
             if (o1[k]) ans[k] = "*";  //如果不带参数，则标记为*
-            else if (o2[k] && i + 1 < ops.size()) ans[k] = ops[i + 1], i++; //如果带参数而且不是最后一个元素，则赋值为后面的参数。会自动更新后面的参数，小参数变为大的
+            else if (o2[k] && i + 1 < ops.size()) ans[k] = ops[i + 1], i++; //如果带参数而且不是最后一个元素，则赋值为后面的参数。会自动更新为最后一次出现的参数
             else break;
         }
         for (int i = 0; i < 26; i++)//输出参数
