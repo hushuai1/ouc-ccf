@@ -1,10 +1,10 @@
 ﻿// 201312-1 出现次数最多的数.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //http://118.190.20.162/view.page?gpid=T5
 
-#include <iostream>
-#include <cstring>
-#include <algorithm>
-
+// #include <iostream>
+// #include <cstring>
+// #include <algorithm>
+#include<bits/stdc++.h>
 using namespace std;
 
 const int N = 10010; //定义数组空间大小
@@ -14,6 +14,7 @@ int s[N];    //定义数组，s[10010]表示数组里面最多可以放10010个�
 
 int main()
 {
+    //freopen("test.txt","r",stdin);
     cin >> n;    //n表示输入多少个数
     while (n--)  //为什么不是--n?
     {
