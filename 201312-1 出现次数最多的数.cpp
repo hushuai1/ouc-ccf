@@ -4,7 +4,7 @@
 // #include <iostream>
 // #include <cstring>
 // #include <algorithm>
-#include<bits/stdc++.h>
+#include<bits/stdc++.h> //万能头文件
 using namespace std;
 
 const int N = 10010; //定义数组空间大小
